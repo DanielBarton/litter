@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>List of all Tweets</h1>
+<h1>Welcome to Litter</h1>
 <div class="jumbotron" style="max-width": 400px >
   <h3>Random Tweet: <%= @random_tweet_body %></h3>
 </div>
@@ -11,11 +11,11 @@
 <div class="jumbotron" style="max-width: 400px">
   <p><%= tweet.body %></p>
   <h4>Posted By <%= tweet.user %></h4>
-</div>
-
+  
 <%= link_to 'Show', tweet, class: "btn btn-danger btn-sm" %>
 <%= link_to 'Edit', edit_tweet_path(tweet), class: "btn btn-danger btn-sm" %>
 <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm"
+</div>
 
 <% end %>
 </center>
