@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Welcome to Litter</h1>
+<center>
+<% @tweets.each do |tweet| %>
 <div class="jumbotron" style="max-width: 400px">
   <p><%= tweet.body %></p>
   <h4>Posted By <%= tweet.user %></h4>
@@ -9,8 +11,8 @@
 <%= link_to 'Edit', edit_tweet_path(tweet), class: "btn btn-danger btn-sm" %>
 <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm"%>
 </div>
-<center>
-<% @tweets.each do |tweet| %>
+
+
 
 
 
